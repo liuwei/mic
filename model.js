@@ -1,0 +1,1 @@
+Geometries = new Meteor.Collection("geometries");

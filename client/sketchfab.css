@@ -1,0 +1,134 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    margin: 50px 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#outer {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.object {
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 40px;
+}
+
+.object .name {
+    display: inline-block;
+    width: 300px;
+    font-size: 1.75em;
+}
+
+.object .score {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    color: #777;
+}
+
+.object.selected {
+    background-color: yellow;
+}
+
+.object.selected .name {
+    color: black;
+}
+
+.details, .none {
+    font-weight: bold;
+    font-size: 2em;
+    border-style: dashed none none none;
+    border-color: #ccc;
+    border-width: 4px;
+    margin: 50px 10px;
+    padding: 10px 0px;
+}
+
+.none {
+    color: #777;
+}
+
+.inc {
+    cursor: pointer;
+}
+
+canvas {
+    border: 2px dotted blue;
+}
+
+.model {
+    width: 400px;
+    height: 400px;
+}
+
+#item-list .object:hover {
+    background-color: yellow;
+}
+
+#item-list .object:hover .destroy {
+    background: url('/destroy.png') no-repeat 0 0;
+}
+
+#item-list .object .destroy:hover {
+    background-position: 0 -20px;
+}
+
+#item-list .object .destroy {
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+#item-list .object {
+    display: block;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+
+/*#progress {*/
+    /*color:red;*/
+    /*top:7em;*/
+    /*width: 100%;*/
+    /*font-size:3em;*/
+    /*font-variant:small-caps;*/
+    /*font-weight:bold;*/
+    /*position:absolute;*/
+    /*z-index:100;*/
+    /*text-align: center;*/
+    /*text-shadow: #000 0px 0px 10px;*/
+    /*display:none;*/
+/*}*/
+
+.shadow {
+    -moz-box-shadow: 0px 0px 5px #000;
+    -webkit-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+}
+
+#progressbar {
+    text-align: center;
+    background: white;
+    width: 250px;
+    height: 10px;
+}
+
+#bar {
+    background:#d00;
+    width:100px;
+    height:10px;
+}

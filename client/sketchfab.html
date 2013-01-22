@@ -1,0 +1,47 @@
+<head>
+    <title>Leaderboard</title>
+    <script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
+    <script type="text/javascript">
+        filepicker.setKey('ANZdON1qlTNexuzjVcBwRz');
+    </script>
+</head>
+
+<body>
+    <!--<div id="progress">-->
+        <!--<span id="message">Please select a model:</span>-->
+
+    <!--</div>-->
+    {{> leaderboard}}
+
+</body>
+
+<template name="leaderboard">
+    <input type="button" id="picker" value="Load new model"/>
+    <div class="leaderboard">
+        <ul id="item-list">
+            {{#each geometries}}
+            {{> geometry}}
+            {{/each}}
+        </ul>
+    </div>
+    <!--<div id="progress">-->
+        <!--<span id="message">Loading ...</span>-->
+
+            <!--<div id="progressbar"><div id="bar"></div></div>-->
+
+    <!--</div>-->
+    <div class="model">
+
+    </div>
+</template>
+
+<template name="geometry">
+    <li class="object">
+        <div class="destroy"></div>
+        <div class="{{selected}}">
+            <div class="name">
+                {{name}}
+            </div>
+        </div>
+    </li>
+</template>
